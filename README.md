@@ -8,3 +8,8 @@ Final paper of the Computer Engineering course at the Federal Technological Univ
 This project's goal is to compare neural networks algorithms performances using [Elixir](https://elixir-lang.org/) with [Nx](https://github.com/elixir-nx/nx) library and [Python](https://www.python.org/) with [NumPy](https://numpy.org/) library
 ## Main diagram
 ![Diagram](diagram_ex_py.png)
+
+## Implementations:
+
+ - ### Elixir Implementation: [elixir_neural_network_labs](https://github.com/sallaumen/elixir_neural_network_labs)
+ - ### Python Implementation: [python_neural_network_labs](https://github.com/sallaumen/python_neural_network_labs)
