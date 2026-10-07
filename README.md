@@ -1,15 +1,27 @@
-# Elixir vs Python Neural Network comparison
+# Neural networks in Elixir and Python
 
-*Author: Lucas Campos Tavano*
+A three-repository home for Lucas Campos Tavano's Computer Engineering capstone project at the Federal University of Technology – Paraná (UTFPR). The original work explored image classification with Elixir/Nx and Python/TensorFlow. This repository is the overview; the runnable implementations live in separate repositories.
 
-Final paper of the Computer Engineering course at the Federal Technological University of Paraná (UTFPR)
+| Repository | Role | Current scope |
+| --- | --- | --- |
+| [Elixir neural network experiments](https://github.com/sallaumen/elixir_neural_network_labs) | Nx, Axon, EXLA, and Scidata implementation | MNIST full train/test run verified on the current stack; CIFAR-10 synthetic checks passed; historical manual Nx code |
+| [Python neural network experiments](https://github.com/sallaumen/python_neural_network_labs) | TensorFlow/Keras implementation | MNIST and CIFAR-10 training and held-out test evaluation |
+| This repository | Project overview and comparison guidance | Context, diagram, and [methodology](docs/methodology.md) |
 
-## Description
-This project's goal is to compare neural networks algorithms performances using [Elixir](https://elixir-lang.org/) with [Nx](https://github.com/elixir-nx/nx) library and [Python](https://www.python.org/) with [NumPy](https://numpy.org/) library
-## Main diagram
-![Diagram](diagram_ex_py.png)
+![Original project diagram](diagram_ex_py.png)
 
-## Implementations:
+## Start here
 
- - ### Elixir Implementation: [elixir_neural_network_labs](https://github.com/sallaumen/elixir_neural_network_labs)
- - ### Python Implementation: [python_neural_network_labs](https://github.com/sallaumen/python_neural_network_labs)
+1. Choose a dataset and implementation from the table above.
+2. Follow that repository's README for its toolchain and commands.
+3. Read the [comparison methodology](docs/methodology.md) before interpreting or publishing performance numbers.
+
+The historical implementations are useful demonstrations, but they are **not yet a controlled language benchmark**. Model architectures, optimizers, batch sizes, and backend configurations differ. The checked-in images document the original project and are not new measurements. The Elixir repository [records the original OTP 24 / Elixir 1.13 toolchain](https://github.com/sallaumen/elixir_neural_network_labs/blob/main/docs/historical-environment.md) separately from its current stack.
+
+## Project direction
+
+The maintained implementations now have held-out evaluation paths. The next stage is to define equivalent model specifications, capture full environment details, and run repeated measurements on the same hardware. The [methodology](docs/methodology.md) lists the minimum evidence needed for a defensible comparison.
+
+## Author
+
+Lucas Campos Tavano · Computer Engineering, UTFPR
