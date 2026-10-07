@@ -4,8 +4,8 @@ A three-repository home for Lucas Campos Tavano's Computer Engineering capstone 
 
 | Repository | Role | Current scope |
 | --- | --- | --- |
-| [Elixir neural network experiments](https://github.com/sallaumen/elixir_neural_network_labs) | Nx, Axon, EXLA, and Scidata implementation | MNIST full train/test run verified on the current stack; CIFAR-10 synthetic checks passed; historical manual Nx code |
-| [Python neural network experiments](https://github.com/sallaumen/python_neural_network_labs) | TensorFlow/Keras implementation | MNIST and CIFAR-10 training and held-out test evaluation |
+| [Elixir neural network experiments](https://github.com/sallaumen/elixir_neural_network_labs) | Nx, Axon, EXLA, and Scidata implementation | MNIST and CIFAR-10 full train/test runs verified on the current stack; historical manual Nx code |
+| [Python neural network experiments](https://github.com/sallaumen/python_neural_network_labs) | TensorFlow/Keras implementation | MNIST and CIFAR-10 full train/test runs verified on the current stack |
 | This repository | Project overview and comparison guidance | Context, diagram, and [methodology](docs/methodology.md) |
 
 ![Original project diagram](diagram_ex_py.png)
@@ -17,6 +17,8 @@ A three-repository home for Lucas Campos Tavano's Computer Engineering capstone 
 3. Read the [comparison methodology](docs/methodology.md) before interpreting or publishing performance numbers.
 
 The historical implementations are useful demonstrations, but they are **not yet a controlled language benchmark**. Model architectures, optimizers, batch sizes, and backend configurations differ. The checked-in images document the original project and are not new measurements. The Elixir repository [records the original OTP 24 / Elixir 1.13 toolchain](https://github.com/sallaumen/elixir_neural_network_labs/blob/main/docs/historical-environment.md) separately from its current stack.
+
+The [7 October 2026 validation record](docs/validation-2026-10-07.md) documents full dataset runs on both current implementations. Those single runs verify that training and held-out evaluation work; they do not support a speed comparison.
 
 ## Project direction
 
